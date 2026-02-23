@@ -4,8 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Payoo App</title>
+
+  <!-- Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Google Font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+   <link rel="shortcut icon" href="./payoo-resources/assets/logo.png" type="image/x-icon">
+
+   <!-- Font Awesome CDN Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <style>
+    /* <!-- Adding font family --> */
+      *{
+    font-family: "Outfit", sans-serif;
+    }
+    </style>
 </head>
-<body>
+<body class="min-h-screen max-w-md mx-auto bg-base-300">
+  <div class="logo max-w-[270px] mx-auto pt-[210px]">
+    <img src="./payoo-resources/assets/Logo-full.png" alt="">
+  </div>
+
+  <!-- Login Form -->
+   <div class="login-form p-8">
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 rounded-[24px] mx-auto mt-8">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label font-bold text-neutral">Mobile Number</label>
+          <input id="input-number" type="text" maxlength="10" minlength="10" class="input rounded-full bg-base-200 border-none" placeholder="Enter mobile number" value="1234567890">
+          <label class="label font-bold text-neutral">4 Digit Pin</label>
+          <input id="input-pin" type="text" maxlength="4" class="input rounded-full bg-base-200 border-none" placeholder="Enter 4 digit pin" />
+          <div><a class="link link-hover"></a></div>
+          <button id="login-button" class="btn btn-primary mt-1 rounded-full shadow-none max-w-[320px] ">Login</button>
+        </fieldset>
+      </div>
+    </div>
+   </div>
   
+  
+  <script src="./script/login.js"></script>
 </body>
 </html>
