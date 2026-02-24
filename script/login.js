@@ -12,7 +12,7 @@
 
      if(pin.length == '4'){
         alert("Login-Success");
-        window.location.assign("/home.html")    
+        window.location.href = "home.html";    
      }
      else{
         alert("Login-Failed");
