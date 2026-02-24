@@ -31,7 +31,7 @@ document.getElementById('cashout-button')
         // Get the pin, verify
         const getPin = document.getElementById('pin-number');
         const addPin = getPin.value;
-        if(addPin === '1234'){
+        if(addPin.length == '4'){
             // True :: show an alert > set balance
             alert('Cashout Successful');
             console.log('new balance', newBalance);
